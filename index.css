@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #f7f7f7;
+}
+
+header > h1 {
+	text-align: center;
+	animation: doiMau ease-in 5s infinite;
+}
+
+@keyframes doiMau {
+	0% {
+		color: #000;
+	}
+	
+	25% {
+		color: #fdcb9e;	
+	}
+	
+	50% {
+		color: #cceabb;
+	}
+	
+	75% {
+		color: #fdcb9e;	
+	}
+	
+	100% {
+		color: #000;
+	}
+}
+
+body {
+	font-family: sans-serif;	
+}
+
+nav > ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+nav {
+	background-color: #3f3f44;	
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav > ul > li {
+	display: block;
+	padding: 15px 10px;
+	background-color: #fdcb9e;
+	border-left: 1px solid #FFF;
+	min-width: 120px;
+	text-align:center;
+}
+
+nav > ul > li:hover {
+	background-color: #cceabb;
+}
+
+nav > ul > li:last-child {
+	margin-left: auto;	
+}
+
+section.content {
+	background-color: #fdcb9e;
+	margin-top: 10px;
+}
+
+.language {
+	display: flex;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.language > div > img:hover {
+	transform: skew(-20deg);
+}
+
+.language > div > img {
+	transition:transform ease-in 0.5s;
+	padding: 10px;
+}
+
+footer {
+	position: relative;
+	text-align: center;
+	bottom: 0%;
+	color: #fff;
+	background-color: #3f3f44;
+}
